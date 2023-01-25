@@ -6,6 +6,8 @@
     "clsx",
     "denormalization",
     "Denormalize",
+    "dlink",
+    "Dlinked",
     "docsearch",
     "gltf",
     "Infima",
@@ -20,6 +22,7 @@
     "trivago",
     "typecheck",
     "webfactory",
+    "webkitvisibilitychange",
     "zlevel"
   ]
 }
