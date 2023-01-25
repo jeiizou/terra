@@ -3,12 +3,14 @@ lockfileVersion: 5.3
 specifiers:
   '@rush-temp/terra-hook': file:./projects/terra-hook.tgz
   '@rush-temp/terra-utils': file:./projects/terra-utils.tgz
+  '@types/lodash': ^4.14.0
   '@types/lodash-es': ^4.17.6
   '@types/react': ^18.0.17
   '@types/react-dom': ^18.0.6
   concurrently: ^7.3.0
   cross-env: ^7.0.3
   esbuild: ^0.15.5
+  lodash: ^4.14.0
   lodash-es: ^4.17.21
   npm-dts: ^1.3.12
   react: ^18.2.0
@@ -18,12 +20,14 @@ specifiers:
 dependencies:
   '@rush-temp/terra-hook': file:projects/terra-hook.tgz
   '@rush-temp/terra-utils': file:projects/terra-utils.tgz
+  '@types/lodash': 4.14.186
   '@types/lodash-es': 4.17.6
   '@types/react': 18.0.21
   '@types/react-dom': 18.0.6
   concurrently: 7.4.0
   cross-env: 7.0.3
   esbuild: 0.15.11
+  lodash: 4.17.21
   lodash-es: 4.17.21
   npm-dts: 1.3.12
   react: 18.2.0
@@ -1048,16 +1052,18 @@ packages:
     dev: false
 
   file:projects/terra-hook.tgz:
-    resolution: {integrity: sha512-gNvuUYVsaa9gkdbeSuBdADdWENqqL6KxHvUXsHibKN/O024P58qkGSo0Y9ofbQNXLofo5qDJAhlTi5AunwhPdQ==, tarball: file:projects/terra-hook.tgz}
+    resolution: {integrity: sha512-kecwg7NRrSJ3kJQxCC4zRhsAQBXjZC9wz8oW0wP6FdaLYzWKMRU7s6Uue9J/PTqQrADTMlji4UlTY6bR++XbnQ==, tarball: file:projects/terra-hook.tgz}
     name: '@rush-temp/terra-hook'
     version: 0.0.0
     dependencies:
+      '@types/lodash': 4.14.186
       '@types/lodash-es': 4.17.6
       '@types/react': 18.0.21
       '@types/react-dom': 18.0.6
       concurrently: 7.4.0
       cross-env: 7.0.3
       esbuild: 0.15.11
+      lodash: 4.17.21
       lodash-es: 4.17.21
       npm-dts: 1.3.12
       react: 18.2.0

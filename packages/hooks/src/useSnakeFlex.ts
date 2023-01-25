@@ -1,16 +1,16 @@
 import { useState } from 'react';
 
 function genAdjust(
-  elems: HTMLElement[],
+  elms: HTMLElement[],
   container: HTMLElement,
   config: {
     directionRight: boolean;
     offset: number;
-  }
+  },
 ) {
-  const item = elems[0];
+  const item = elms[0];
   // total number of element
-  const n_t = elems.length;
+  const n_t = elms.length;
   // width of an element
   let w = parseInt(`${item.offsetWidth}`);
   // full width of element with margin
@@ -38,28 +38,28 @@ function genAdjust(
         if (j + i * nb >= n_t) {
           /* we exit if we reach the number of elements*/ break;
         }
-        elems[j + i * nb].style.marginLeft = `${config.offset}px`; /* we rest the margin*/
+        elms[j + i * nb].style.marginLeft = `${config.offset}px`; /* we rest the margin*/
         if (i % 2 !== Number(config.directionRight)) {
           // 正向
-          elems[j + i * nb].style.order = `${j + i * nb}`;
+          elms[j + i * nb].style.order = `${j + i * nb}`;
 
           orderRight.push(j + i * nb);
         } /* normal flow */ else {
           // 逆向
-          elems[j + i * nb].style.order = `${nb - j + i * nb}`; /* opposite flow */
+          elms[j + i * nb].style.order = `${nb - j + i * nb}`; /* opposite flow */
           /* margin fix*/
           if (i === nc - 1 && j + i * nb === n_t - 1 && j < nb - 1) {
-            elems[j + i * nb].style.marginLeft = `${(nb * nc - n_t) * w + config.offset}px`;
+            elms[j + i * nb].style.marginLeft = `${(nb * nc - n_t) * w + config.offset}px`;
           }
         }
 
         if (j === 0) {
-          (elems[j + i * nb] as HTMLDivElement).setAttribute('data-site', 'head');
+          (elms[j + i * nb] as HTMLDivElement).setAttribute('data-site', 'head');
           heads.push(j + i * nb);
         }
 
         if (j >= nb - 1 || j + i * nb + 1 >= n_t) {
-          (elems[j + i * nb] as HTMLDivElement).setAttribute('data-site', 'tail');
+          (elms[j + i * nb] as HTMLDivElement).setAttribute('data-site', 'tail');
           tails.push(j + i * nb);
         }
       }
