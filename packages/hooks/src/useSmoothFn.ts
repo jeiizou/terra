@@ -1,5 +1,4 @@
-import { debounce, DebounceSettings } from 'lodash-es';
-import { useEffect, useMemo, useRef } from 'react';
+import { useMemo } from 'react';
 import { useLatest } from './useLatest';
 import { useUnmount } from './useUnmount';
 
