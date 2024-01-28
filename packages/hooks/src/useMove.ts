@@ -1,8 +1,6 @@
 import React, { RefObject, useRef, useState } from 'react';
 import { useSmoothFn } from './useSmoothFn';
 
-type TargetDom = RefObject<HTMLElement>;
-
 export interface UseMoveConfig {
   defaultPosition: [number, number];
 }

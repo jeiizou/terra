@@ -15,5 +15,5 @@
     "outDir": "bin",
     "rootDir": "."
   },
-  "include": ["lib"]
+  "include": ["src"]
 }
