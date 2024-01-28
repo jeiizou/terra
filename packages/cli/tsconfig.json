@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "useDefineForClassFields": true,
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "lib": ["esnext", "ESNext"],
+    "emitDeclarationOnly": true,
+    "declaration": true,
+    "outDir": "bin",
+    "rootDir": "."
+  },
+  "include": ["lib"]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "terra-cli",
+  "version": "0.0.1",
+  "bin": {
+    "myset": "./bin/myset.js"
+  },
+  "files": [
+    "bin",
+    "package.json"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "rollup -c",
+    "preview": "vite preview",
+    "cmd": "node ./bin/myset.js"
+  },
+  "devDependencies": {
+    "@types/node": "~20.11.5",
+    "typescript": "^5.2.2",
+    "rollup": "~4.9.6",
+    "@rollup/plugin-typescript": "~11.1.6",
+    "@rollup/plugin-json": "~6.1.0",
+    "tslib": "~2.6.2"
+  },
+  "dependencies": {
+    "chalk": "^4",
+    "commander": "~11.1.0",
+    "ora": "5.4.1",
+    "@topcli/spinner": "~2.1.2",
+    "markdown-it": "~14.0.0",
+    "axios": "~1.6.6",
+    "cheerio": "~1.0.0-rc.12",
+    "inquirer": "^8.0.0",
+    "degit": "~2.8.4"
+  }
+}
