@@ -18,15 +18,15 @@
   "variants": [],
   "projects": [
     {
-      "packageName": "terra-utils",
+      "packageName": "@jzff/terra-utils",
       "projectFolder": "packages/utils"
     },
     {
-      "packageName": "terra-hook",
+      "packageName": "@jzff/terra-hook",
       "projectFolder": "packages/hooks"
     },
     {
-      "packageName": "terra-cli",
+      "packageName": "@jzff/terra-cli",
       "projectFolder": "packages/cli"
     }
   ]

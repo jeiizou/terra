@@ -4,7 +4,7 @@ import json from '@rollup/plugin-json';
 export default {
   input: 'lib/index.ts',
   output: {
-    file: 'bin/myset.js',
+    file: 'bin/terra.js',
     format: 'cjs',
   },
   plugins: [typescript(), json()],

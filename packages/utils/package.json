@@ -1,5 +1,5 @@
 {
-  "name": "terra-utils",
+  "name": "@jzff/terra-utils",
   "private": true,
   "version": "0.0.0",
   "type": "module",
